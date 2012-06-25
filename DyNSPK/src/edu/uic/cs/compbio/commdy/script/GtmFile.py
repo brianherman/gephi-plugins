@@ -4,6 +4,8 @@
 
 import os,sys,operator,glob
 from util import *
+#from edu.uic.cs.compbio.DyNSPK import GtmFile
+import GtmFile
 #from UnionFind2 import UnionFind
 
 debug = False
@@ -51,7 +53,6 @@ def guess_gtmfile3(clue=""):
         return prefix + '.gtm2'
     else:
         raise Exception("Cannot guess GTM filename from '%s'"%clue)
-
 class GtmFile:
 
     def __init__(self, gtm_fname):
